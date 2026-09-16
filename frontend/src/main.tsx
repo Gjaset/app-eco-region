@@ -12,6 +12,8 @@ import RegisterPage from './pages/auth/RegisterPage'
 import AdminPage from './pages/admin/AdminPage'
 import FormatosPage from './pages/FormatosPage'
 import MisSolicitudesPage from './pages/MisSolicitudesPage'
+import DemoIncompletoPage from './pages/demo/DemoIncompletoPage'
+import DemoCompletoPage from './pages/demo/DemoCompletoPage'
 import FormatSDAPage from './pages/formatos/FormatSDAPage'
 import FormatCorpoboyacaPage from './pages/formatos/FormatCorpoboyacaPage'
 import './index.css'
@@ -36,6 +38,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path="/formatos/sda" element={<FormatSDAPage />} />
           <Route path="/formatos/corpoboyaca" element={<FormatCorpoboyacaPage />} />
           <Route path="/mis-solicitudes" element={<MisSolicitudesPage />} />
+          <Route path="/prueba1" element={<DemoIncompletoPage />} />
+          <Route path="/prueba2" element={<DemoCompletoPage />} />
           <Route path="/admin" element={
             <AdminRoute><AdminPage /></AdminRoute>
           } />
