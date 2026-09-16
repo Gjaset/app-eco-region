@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Bogotá D.C.",
+    "codigo": "11001",
+    "departamento": "Cundinamarca"
+  },
+  {
+    "nombre": "Duitama",
+    "codigo": "15244",
+    "departamento": "Boyacá"
+  },
+  {
+    "nombre": "Medellín",
+    "codigo": "05001",
+    "departamento": "Antioquia"
+  },
+  {
+    "nombre": "Cali",
+    "codigo": "76001",
+    "departamento": "Valle del Cauca"
+  },
+  {
+    "nombre": "Barranquilla",
+    "codigo": "08001",
+    "departamento": "Atlántico"
+  },
+  {
+    "nombre": "Cartagena",
+    "codigo": "13001",
+    "departamento": "Bolívar"
+  },
+  {
+    "nombre": "Cúcuta",
+    "codigo": "54001",
+    "departamento": "Norte de Santander"
+  },
+  {
+    "nombre": "Soledad",
+    "codigo": "08074",
+    "departamento": "Atlántico"
+  },
+  {
+    "nombre": "Ibagué",
+    "codigo": "73001",
+    "departamento": "Tolima"
+  },
+  {
+    "nombre": "Villavicencio",
+    "codigo": "50001",
+    "departamento": "Meta"
+  },
+  {
+    "nombre": "Santa Marta",
+    "codigo": "47001",
+    "departamento": "Magdalena"
+  },
+  {
+    "nombre": "Valledupar",
+    "codigo": "20001",
+    "departamento": "Cesar"
+  },
+  {
+    "nombre": "Montería",
+    "codigo": "23001",
+    "departamento": "Córdoba"
+  },
+  {
+    "nombre": "Manizales",
+    "codigo": "17001",
+    "departamento": "Caldas"
+  },
+  {
+    "nombre": "Pereira",
+    "codigo": "66001",
+    "departamento": "Risaralda"
+  },
+  {
+    "nombre": "Popayán",
+    "codigo": "19001",
+    "departamento": "Cauca"
+  },
+  {
+    "nombre": "Neiva",
+    "codigo": "41001",
+    "departamento": "Huila"
+  },
+  {
+    "nombre": "Santafe de Antioquia",
+    "codigo": "05387",
+    "departamento": "Antioquia"
+  },
+  {
+    "nombre": "Girardot",
+    "codigo": "25239",
+    "departamento": "Cundinamarca"
+  },
+  {
+    "nombre": "Facatativá",
+    "codigo": "25269",
+    "departamento": "Cundinamarca"
+  }
+]

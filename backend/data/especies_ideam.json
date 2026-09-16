@@ -1,0 +1,22 @@
+[
+  {"nombre_comun": "eucalipto", "nombre_cientifico": "Eucalyptus globulus", "familia": "Myrtaceae"},
+  {"nombre_comun": "pino", "nombre_cientifico": "Pinus patula", "familia": "Pinaceae"},
+  {"nombre_comun": "roble", "nombre_cientifico": "Quercus humboldtii", "familia": "Fagaceae"},
+  {"nombre_comun": "cedro", "nombre_cientifico": "Cedrela odorata", "familia": "Meliaceae"},
+  {"nombre_comun": "caoba", "nombre_cientifico": "Swietenia macrophylla", "familia": "Meliaceae"},
+  {"nombre_comun": "guayacán", "nombre_cientifico": "Guaiacum officinale", "familia": "Zygophyllaceae"},
+  {"nombre_comun": "morado", "nombre_cientifico": "Machorium luzonium", "familia": "Fabaceae"},
+  {"nombre_comun": "saman", "nombre_cientifico": "Samanea saman", "familia": "Fabaceae"},
+  {"nombre_comun": "ceiba", "nombre_cientifico": "Ceiba pentandra", "familia": "Malvaceae"},
+  {"nombre_comun": "arrayán", "nombre_cientifico": "Luma apiculata", "familia": "Myrtaceae"},
+  {"nombre_comun": "yarumo", "nombre_cientifico": "Cecropia peltata", "familia": "Urticaceae"},
+  {"nombre_comun": "guadua", "nombre_cientifico": "Guadua angustifolia", "familia": "Poaceae"},
+  {"nombre_comun": "palma de cera", "nombre_cientifico": "Ceroxylon quindiuense", "familia": "Arecaceae"},
+  {"nombre_comun": "nogal", "nombre_cientifico": "Juglans neotropica", "familia": "Juglandaceae"},
+  {"nombre_comun": "aliso", "nombre_cientifico": "Alnus acuminata", "familia": "Betulaceae"},
+  {"nombre_comun": "arrayán blanco", "nombre_cientifico": "Myrcianthes rhopaloides", "familia": "Myrtaceae"},
+  {"nombre_comun": "bolina blanca", "nombre_cientifico": "Tabebuia rosea", "familia": "Bignoniaceae"},
+  {"nombre_comun": "mangle", "nombre_cientifico": "Rhizophora mangle", "familia": "Rhizophoraceae"},
+  {"nombre_comun": "helecho", "nombre_cientifico": "Pteridium aquilinum", "familia": "Dennstaedtiaceae"},
+  {"nombre_comun": "orquídea", "nombre_cientifico": "Cattleya trianae", "familia": "Orchidaceae"}
+]

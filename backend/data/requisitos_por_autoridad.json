@@ -1,0 +1,29 @@
+{
+  "SDA": {
+    "autoridad": "Secretaría Distrital de Ambiente",
+    "anexos": [
+      "Documento de identidad o certificado de existencia y representación legal",
+      "Certificado de tradición y libertad del predio",
+      "Plano o mapa de localización",
+      "Inventario forestal y registro fotográfico"
+    ]
+  },
+  "CAR": {
+    "autoridad": "Corporación Autónoma Regional de Cundinamarca",
+    "anexos": [
+      "Documento de identidad o certificado de existencia y representación legal",
+      "Documento que acredite la propiedad o tenencia del predio",
+      "Plano o mapa de localización",
+      "Inventario forestal y registro fotográfico"
+    ]
+  },
+  "CORPOBOYACA": {
+    "autoridad": "Corporación Autónoma Regional de Boyacá",
+    "anexos": [
+      "Documento de identidad o certificado de existencia y representación legal",
+      "Documento que acredite la propiedad o tenencia del predio",
+      "Plano o mapa de localización",
+      "Inventario forestal y registro fotográfico"
+    ]
+  }
+}
