@@ -69,7 +69,8 @@ async def preview_document(file: UploadFile = File(...)) -> StreamingResponse:
         raise HTTPException(
             status_code=503,
             detail="El servicio de conversión (Gotenberg) no está disponible. "
-            "Verifica que el contenedor 'gotenberg' esté levantado.",
+            "En local levanta el contenedor 'gotenberg' (docker compose); en "
+            "producción define GOTENBERG_URL apuntando a una instancia externa.",
         )
     except httpx.TimeoutException:
         raise HTTPException(

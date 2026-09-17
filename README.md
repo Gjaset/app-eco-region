@@ -234,16 +234,21 @@ ante un error responde de forma segura con una orientación determinista.
 
 ## Despliegue en Vercel
 
-Son **dos proyectos Vercel** (Vercel no corre Docker ni Postgres local):
+Son **dos proyectos Vercel apuntando al mismo repo** (Vercel no corre Docker ni Postgres local):
 
 | Proyecto | Root Directory | Qué hace |
 |---|---|---|
 | `ecoregion-front` | `frontend` | React + Vite estático (`frontend/vercel.json` trae los rewrites SPA) |
-| `ecoregion-back` | `backend` | FastAPI en serverless vía `backend/api/index.py` (Mangum). `backend/vercel.json` redirige todo al handler |
+| `ecoregion-back` | `backend` | FastAPI serverless: `backend/api/index.py` expone la app ASGI y `backend/vercel.json` redirige todo ahí |
 
-### 1. Base de datos (Neon o Supabase)
+> Los archivos `vercel.json` y `api/` que había en la **raíz** del repo eran restos rotos de un intento de monolito y se eliminaron: el despliegue siempre es por subcarpeta.
+
+### 1. Base de datos (Neon, Railway o Render)
 
 Crea un Postgres externo y usa su URL **del pooler** (imprescindible en serverless):
+
+- **Neon**: copia la connection string que termina en `-pooler` (ya trae `?sslmode=require`).
+- **Railway / Render**: usa la URL pública; si viene como `postgres://` el backend la normaliza a `postgresql://` automáticamente.
 
 ```bash
 # Desde backend/ (alembic.ini vive ahí), con la URL de producción:
@@ -269,6 +274,7 @@ Frontend (`ecoregion-front`):
 - Con `VERCEL=1` (lo pone Vercel solo) el backend usa `NullPool` y omite el disco: las copias van a la columna `contenido` (migración `0005`). La `0006` añade `estado` a las solicitudes para el panel admin.
 - Cold starts de ~2-5 s en el primer request; el resto va normal.
 - Límite de función: se eliminó `pandas` (no se usaba) para caber en los 250 MB.
+- **Gotenberg no se despliega**: la vista previa de DOCX/XLSX (`POST /api/documents/preview`) responde 503 en producción hasta que definas `GOTENBERG_URL` apuntando a una instancia externa (p. ej. un servicio Docker `gotenberg/gotenberg:8` en Render). Los PDF se previsualizan sin Gotenberg.
 
 ### 4. Plantillas de formularios (XLSX / DOCX)
 

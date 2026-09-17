@@ -1,12 +1,12 @@
 """Punto de entrada serverless para Vercel (proyecto con Root Directory = `backend`).
 
-Vercel invoca `handler` en cada request; Mangum traduce el evento a ASGI y
-reutiliza la misma `app` de FastAPI del desarrollo local. Sin este archivo
-el desarrollo con Docker/uvicorn no cambia en nada.
+El runtime @vercel/python detecta la app ASGI `app` (FastAPI) y la invoca en
+cada request; `backend/vercel.json` redirige todas las rutas a este archivo.
+Mangum queda como fallback para runtimes tipo Lambda (AWS), no se usa en Vercel.
 """
 
-from mangum import Mangum
+from app.main import app  # noqa: F401 — Vercel invoca esta app ASGI
 
-from app.main import app
+from mangum import Mangum
 
 handler = Mangum(app, lifespan="off")

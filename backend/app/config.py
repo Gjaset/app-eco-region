@@ -11,7 +11,11 @@ class Settings:
     APP_ENV: str = os.getenv("APP_ENV", "development")
 
     # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://ecoregion:ecoregion_pass@localhost:5432/ecoregion_db")
+    # Render/Railway/Heroku entregan "postgres://", SQLAlchemy exige "postgresql://".
+    # Neon/Supabase: usa la URL del pooler (-pooler) para serverless.
+    DATABASE_URL: str = os.getenv(
+        "DATABASE_URL", "postgresql://ecoregion:ecoregion_pass@localhost:5432/ecoregion_db"
+    ).replace("postgres://", "postgresql://", 1)
 
     # Security — fail fast en producción si no hay secreto real
     SECRET_KEY: str = os.getenv("SECRET_KEY", "dev-only-change-me")
